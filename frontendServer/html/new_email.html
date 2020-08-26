@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email</title>
+	<link rel="stylesheet" type="text/css" href="./css/signin.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="icon" href="data:;base64,=">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Penn Cloud</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/email">Email<span class="sr-only">(current)</span></a>
+      </li>
+      </li>
+    </ul>
+    <ul class="navbar-nav my-2 my-lg-0">
+    <li class="mr-sm-2">
+      <span>$user</span>
+    </li>     
+  </ul>
+  <ul class="navbar-nav my-2 my-lg-0">
+    <li class="mr-sm-2">
+      <a href="/logout" style="color: black;">Log out</a>
+    </li>     
+  </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <form method="post" action="/newemail">
+  <div class="form-group">
+    <label for="exampleFormControlInput1" id="recipent">Email address</label>
+    <input type="email" name="recipent" class="form-control" id="exampleFormControlInput1" value="$email">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1" id="subject">Subject</label>
+    <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" value="$subject">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1" id="message">Message</label>
+    <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3">$content</textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
+</div>
+
+</body>
+</html>

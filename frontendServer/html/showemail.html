@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Email</title>
+	<link rel="stylesheet" type="text/css" href="./css/signin.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="icon" href="data:;base64,=">
+  <style type="text/css">
+    .flex {
+      display: flex;
+      justify-content: center;
+    }
+
+    .flex-item + .flex-item {
+      margin-left: 10px;
+    }
+
+    .button {
+      margin-top: 15px;
+      background-color: #0066FF;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Penn Cloud</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/email">Email<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/newemail">New<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <ul class="navbar-nav my-2 my-lg-0">
+    <li class="mr-sm-2">
+      <span>$user</span>
+    </li>     
+  </ul>
+  <ul class="navbar-nav my-2 my-lg-0">
+    <li class="mr-sm-2">
+      <a href="/logout" style="color: black;">Log out</a>
+    </li>     
+  </ul>
+  </div>
+</nav>
+<div class="container">
+      <h4 style="margin-top: 10px;">$Subject</h4>
+  <hr>
+    <p>$Action: $sender<span style="float: right;">$time</span></p>
+  <hr>
+  <div class="container">
+  <p style="word-break: break-all;">
+    $content
+  </p>
+  </div>
+  <div class="flex">
+    $command-list
+  </div>
+
+</div>
+
+
+</body>
+</html>
