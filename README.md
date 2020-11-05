@@ -1,9 +1,20 @@
 # PennCloud
-- [project](project.pdf)  
-- [report](report.pdf)
+- [Brief](#project-brief)  
+- [Use](#use)
+
+## Project Brief
+PennCloud is a C++ system having complete front-end and back-end design<br/>
+The system supports<br/>
+:key:user sign-up/log-in<br/>
+:email:mail write/send<br/>
+:file_folder:file upload/download<br/> 
+:balance_scale:load balane<br/> 
+:floppy_disk:backup log<br/> 
+:paperclip:fault tolerance<br/>  
+
 
 ## Architect
-
+<img src="/struct.png" width="1000" height="500"/> <!-- image-->
 
 ## Use
 1. bash make in directory: ./frontendServer ./kvstore ./kvstore/master ./webmail  
