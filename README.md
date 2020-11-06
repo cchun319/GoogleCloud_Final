@@ -17,7 +17,10 @@ The system supports<br/>
 <img src="/struct.png" width="1000" height="500"/> <!-- image-->
 
 ## Use
-1. bash make in directory: ./frontendServer ./kvstore ./kvstore/master ./webmail  
+1. Go to the directories: ./frontendServer ./kvstore ./kvstore/master ./webmail and do: 
+```bash 
+make
+```
 2. initialize backend according to ./kvstore/serverlist.txt, note the first number is node ID and the second is replicate ID  
 ```bash
 ./kvstore/master/masterserver -v ../serverlist.txt
